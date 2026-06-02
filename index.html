@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngoc Tuyen | Personal Portfolio & Resume</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        /* Header section */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header-text p {
+            font-size: 1.1rem;
+            color: #cbd5e0;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.95rem;
+            color: #cbd5e0;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dashed #cbd5e0;
+        }
+
+        .contact-info a:hover {
+            color: #90cdf4;
+        }
+
+        /* Main Content Grid */
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        h2.section-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        /* Left Column Styles */
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .timeline-sub {
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        ul.bullet-list {
+            padding-left: 20px;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        ul.bullet-list li {
+            margin-bottom: 5px;
+        }
+
+        /* Right Column Styles */
+        .skill-group {
+            margin-bottom: 15px;
+        }
+
+        .skill-group h4 {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: var(--bg-light);
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .contact-info {
+                text-align: center;
+            }
+            .content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <!-- Header -->
+    <header>
+        <div class="header-text">
+            <h1>Ngoc Tuyen</h1>
+            <p>Information Technology Student</p>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:[Your-Email]@student.hcmus.edu.vn">[Your-Email]@student.hcmus.edu.vn</a></p>
+            <p>GitHub: <a href="https://github.com/n1ntuyn" target="_blank">github.com/n1ntuyn</a></p>
+            <p>Location: Ho Chi Minh City, Vietnam</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Left Column: Education & Projects -->
+        <div class="main-left">
+            
+            <!-- Summary Section -->
+            <div class="section">
+                <h2 class="section-title">About Me</h2>
+                <p class="timeline-desc">
+                    A dedicated and passionate first-year Information Technology student enrolled in the English Advanced Program at HCMUS. Highly motivated to learn software development, object-oriented methodologies, and data structures. Eager to continuously build innovative projects and practical tools to solve real-world optimization problems.
+                </p>
+            </div>
+
+            <!-- Education Section -->
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span>VNU-HCM University of Science (HCMUS)</span>
+                        <span>2025 - 2029</span>
+                    </div>
+                    <div class="timeline-sub">Bachelor of Information Technology - Advanced Program</div>
+                    <p class="timeline-desc">Relevant Coursework: Procedural Programming, Object-Oriented Programming Methodology, Advanced Mathematics, Data Structures foundations.</p>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="section">
+                <h2 class="section-title">Academic Projects</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span>Smart-Mart-Optimizer</span>
+                        <span>2026</span>
+                    </div>
+                    <div class="timeline-sub">Collaborative GitHub Project | Team Member</div>
+                    <p class="timeline-desc" style="margin-bottom: 5px;">A grocery route optimization tool built to streamline navigation and shopping item placement.</p>
+                    <ul class="bullet-list">
+                        <li>Implemented Dijkstra's Algorithm for efficient pathfinding calculations.</li>
+                        <li>Managed collaborative version control workflows, issue tracking, and code reviews using GitHub.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="section">
+                <h2 class="section-title">Experience & Activities</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span>Academic Tutor</span>
+                        <span>Active</span>
+                    </div>
+                    <div class="timeline-sub">Mathematics & Natural Sciences</div>
+                    <p class="timeline-desc">Instructed Grade 8 and Grade 10 students, helping them simplify complex logical patterns, cultivate problem-solving skills, and improve academic performance.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column: Skills & Interests -->
+        <div class="main-right">
+            
+            <!-- Technical Skills -->
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                
+                <div class="skill-group">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span class="tag">C / C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">HTML / CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Developer Tools</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Overleaf & LaTeX</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="section">
+                <h2 class="section-title">Core Qualities</h2>
+                <div class="skill-tags">
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Teamwork</span>
+                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">Critical Thinking</span>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="section">
+                <h2 class="section-title">Interests</h2>
+                <div class="skill-tags">
+                    <span class="tag">Esports</span>
+                    <span class="tag">Handmade Crafts</span>
+                    <span class="tag">Anime</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
